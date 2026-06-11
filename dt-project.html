@@ -46,6 +46,20 @@
     .back:hover {
 
     }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .image-grid img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border: 1px solid #6e2508;
+    }
+
     .grain {
       position: fixed;
       inset: 0;
@@ -73,5 +87,12 @@
 </p>
 <p>It was the first piece I designed independently and built myself of this size and it still lives in my room and gets used.
 </p>
+
+  <div class="image-grid">
+    <img src="dt1.jpg" alt="">
+    <img src="dt2.jpg" alt="">
+    <img src="dt3.jpg" alt="">
+    <img src="dt4.jpg" alt="">
+  </div>
 </body>
 </html>
