@@ -46,6 +46,37 @@
     .back:hover {
 
     }
+    .pdf-link {
+      display: inline-block;
+      margin: 2rem 0;
+      color: #6e2508;
+      font-size: 0.9rem;
+      letter-spacing: 0.03em;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #6e2508;
+    }
+
+    .image-grid figure {
+      margin: 0;
+    }
+
+    .image-grid figcaption {
+      font-size: 0.8rem;
+      color: rgba(110, 37, 8, 0.6);
+      margin-top: 0.5rem;
+    }
+
     .grain {
       position: fixed;
       inset: 0;
@@ -71,5 +102,18 @@
 </p>
 
 <p>I used an open source Python library made by my supervisor and his team called DefDAP (Deformation Data Analysis in Python) for my analysis. It correlates EBSD and HRDIC data. It allowed me to link strain maps to the samples’ microstructures, outlining hydrides, calculating volume fractions, areas, strain distribution and change in crystal orientations.</p>
+
+  <a class="pdf-link" href="nancykeegandissertation.pdf" target="_blank">Download dissertation (PDF)</a>
+
+  <div class="image-grid">
+    <figure>
+      <img src="nirrstrainevolution.jpg" alt="">
+      <figcaption>Non irradiated sample strain evolution</figcaption>
+    </figure>
+    <figure>
+      <img src="irrstrainevolution.jpg" alt="">
+      <figcaption>Irradiated sample strain evolution</figcaption>
+    </figure>
+  </div>
 </body>
 </html>
