@@ -2,108 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700&family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dissertation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
     body {
       margin: 0;
-      padding: 3rem 2rem;
-      font-family: 'Space Grotesk', sans-serif; font-weight: 300;
-      color: #6e2508;
-      background-color: #f2e0c4;
+      padding: 2.5rem 3rem 4rem;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 1.15rem;
+      font-weight: 500;
+      line-height: 1.65;
+      color: #0047AB;
+      background-color: #f8f7f4;
       max-width: 1600px;
-      line-height: 1.7;
-
     }
 
     h1 {
-      font-family: 'Syne', sans-serif;
-      font-weight: 700;
       font-size: 1.8rem;
-
+      font-weight: 600;
       margin: 0 0 0.25rem 0;
     }
 
     .subtitle {
-      font-size: 0.95rem;
-      color: rgba(110, 37, 8, 0.6);
+      font-size: 1rem;
+      font-weight: 400;
+      opacity: 0.6;
       margin: 0 0 2.5rem 0;
     }
 
-    p {
-      margin: 0 0 1.2rem 0;
-    }
+    p { margin: 0 0 1.2rem 0; }
+
     .back {
       display: inline-block;
       margin-bottom: 2rem;
-      font-size: 0.85rem;
-      color: #6e2508;
-      text-decoration: none;
-      letter-spacing: 0.03em;
+      color: #0047AB;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-size: 1rem;
     }
-    .back:hover {
 
-    }
+    .back:hover { opacity: 0.5; }
+
     .pdf-link {
       display: inline-block;
-      margin: 2rem 0;
-      color: #6e2508;
-      font-size: 0.9rem;
-      letter-spacing: 0.03em;
+      margin: 0.5rem 0 2rem 0;
+      color: #0047AB;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-size: 1rem;
     }
+
+    .pdf-link:hover { opacity: 0.5; }
 
     .image-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 1.5rem;
+      gap: 2.5rem;
       margin-top: 1.5rem;
     }
+
+    .image-grid figure { margin: 0; }
 
     .image-grid img {
       width: 100%;
       height: auto;
-      border: 1px solid #6e2508;
-    }
-
-    .image-grid figure {
-      margin: 0;
+      border: 3px solid #0047AB;
+      box-shadow: 6px 6px 0 #0047AB;
+      display: block;
     }
 
     .image-grid figcaption {
-      font-size: 0.8rem;
-      color: rgba(110, 37, 8, 0.6);
-      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 400;
+      opacity: 0.65;
+      margin-top: 0.75rem;
     }
 
-    .grain {
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: 9999;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
-      opacity: 0.06;
+    @media (max-width: 800px) {
+      body { padding: 2rem 1.5rem 3rem; }
+      .image-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
-  <div class="grain"></div>
   <a class="back" href="index.html">← Back</a>
   <h1>Dissertation</h1>
   <p class="subtitle">Deformation behaviour of irradiated Zircaloy-4 · MEng, University of Manchester</p>
 
-<p>For my master’s dissertation I researched the deformation behaviour and crystal orientation change of hydrides within Zircaloy-4, which holds uranium fuel rods in pressurised water reactors. It is one of the hardest environments, high heat, corrosive and radioactive and all of these factors have an effect on the structure of the metal as well as the inclusions within the material, such as hydrides. </p>
-<p>Using high resolution digital image correlation and Electron Backscatter detection, I tracked the strain experienced through the material as it was pulled apart. I compared images and strain data from both an irradiated and non-irradiated sample of Zirconium at different strain steps. The non-irradiated sample stretched more evenly, and strain travelled along grain boundaries as expected. The irradiated sample deformed differently, strain concentrated into sharp, narrow channels along tearing through the grains, with hydride particles clustered along the boundaries creating weak points.
+  <p>For my master's dissertation I researched the deformation behaviour and crystal orientation change of hydrides within Zircaloy-4, which holds uranium fuel rods in pressurised water reactors. It is one of the hardest environments, high heat, corrosive and radioactive and all of these factors have an effect on the structure of the metal as well as the inclusions within the material, such as hydrides.</p>
+  <p>Using high resolution digital image correlation and Electron Backscatter detection, I tracked the strain experienced through the material as it was pulled apart. I compared images and strain data from both an irradiated and non-irradiated sample of Zirconium at different strain steps. The non-irradiated sample stretched more evenly, and strain travelled along grain boundaries as expected. The irradiated sample deformed differently, strain concentrated into sharp, narrow channels along tearing through the grains, with hydride particles clustered along the boundaries creating weak points.</p>
+  <p>From the strain data, hydride density in the irradiated sample dropped by more than half and the inclusions took on a string like morphology, stretching along grain boundaries instead of being distributed throughout the structure. By the final strain step the irradiated sample exhibited strain values over five times higher than the non irradiated sample. This implied radiation impacts the Zircaloy's ability to uniformly deform and creates strain concentrations around inclusions and strain sliding through grains.</p>
+  <p>I used an open source Python library made by my supervisor and his team called DefDAP (Deformation Data Analysis in Python) for my analysis. It correlates EBSD and HRDIC data. It allowed me to link strain maps to the samples' microstructures, outlining hydrides, calculating volume fractions, areas, strain distribution and change in crystal orientations.</p>
 
-</p>
-<p>From the strain data, hydride density in the irradiated sample dropped by more than half and the inclusions took on a string like morphology, stretching along grain boundaries instead of being distributed throughout the structure. By the final strain step the irradiated sample exhibited strain values over five times higher than the non irradiated sample. This implied radiation impacts the Zircaloy’s ability to uniformly deform and creates strain concentrations around inclusions and strain sliding through grains. 
-
-</p>
-
-<p>I used an open source Python library made by my supervisor and his team called DefDAP (Deformation Data Analysis in Python) for my analysis. It correlates EBSD and HRDIC data. It allowed me to link strain maps to the samples’ microstructures, outlining hydrides, calculating volume fractions, areas, strain distribution and change in crystal orientations.</p>
-
-  <a class="pdf-link" href="nancykeegandissertation.pdf" target="_blank">Download dissertation (PDF)</a>
+  <a class="pdf-link" href="nancykeegandissertation.pdf" target="_blank">Download dissertation (PDF) ↗</a>
 
   <div class="image-grid">
     <figure>
